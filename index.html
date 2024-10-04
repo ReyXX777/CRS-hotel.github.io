@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Innovative Hotel Management System</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Innovative Hotel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main id="home">
+        <!-- Hero Section with Room Map Trigger -->
+        <section class="hero">
+            <h2>Welcome to Our Innovative Hotel Management System</h2>
+            <p>Revolutionize your guest experience with AI-driven personalized offers and dynamic room maps.</p>
+            <div class="room-map">
+                <img src="room-map.png" alt="Interactive Room Map">
+                <p>Choose your room with our interactive map for the best stay experience.</p>
+                <button onclick="showMapOffers()">Check AI-Driven Offers</button>
+                <p id="offer-result"></p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h3>Our Features</h3>
+            <div class="feature">
+                <img src="images/room-map1.png" alt="Hotel Rooms">
+                <h4>Dynamic Pricing</h4>
+                <p>Maximize revenue with real-time room rate adjustments based on demand, market trends, and occupancy rates.</p>
+                <button onclick="showDynamicPricing()">See Current Pricing</button>
+                <p id="pricing-result"></p>
+            </div>
+
+            <div class="feature">
+                <img src="images/hotel-lobby.jpg" alt="Hotel Lobby">
+                <h4>Seamless Communication</h4>
+                <p>Engage guests with 24/7 chatbot support, email automation, and CRM integration.</p>
+                <button onclick="contactSupport()">Chat with Us</button>
+            </div>
+
+            <div class="feature">
+                <h4>Feedback & Reviews</h4>
+                <p>Collect guest feedback effortlessly and analyze it with AI-driven sentiment analysis.</p>
+                <button onclick="collectFeedback()">Give Feedback</button>
+            </div>
+
+            <div class="feature">
+                <img src="images/dining.jpg" alt="Dining Area">
+                <h4>Social Media Integration</h4>
+                <p>Promote your hotel with integrated social media campaigns on platforms like Facebook and Instagram.</p>
+                <button onclick="shareSocialMedia()">Share on Social Media</button>
+            </div>
+
+            <!-- Calendar Feature -->
+            <div class="feature">
+                <h4>Calendar Scheduling</h4>
+                <p>Enable guests to book rooms, amenities, and events with ease using our integrated calendar.</p>
+                <button onclick="openCalendar()">View Calendar</button>
+                <div id="calendar-placeholder">
+                    <p>No events scheduled. Click to view available rooms and amenities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Section -->
+        <section id="offers">
+            <h3>Exclusive Offers & Discounts</h3>
+            <img src="images/offer-banner.jpg" alt="Offer Banner" class="offer-banner">
+            <p>Our AI system will automatically trigger exclusive offers when room occupancy is below 80%. Stay tuned for the best deals!</p>
+            <div class="offer-details">
+                <p id="dynamic-offer">No current offers.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h4>Contact Us</h4>
+            <p>Email: support@innovativehotel.com</p>
+            <p>Phone: +123-456-7890</p>
+        </div>
+    </footer>
+
+    <!-- Linking the JavaScript file before the body closes -->
+    <script src="index.js"></script>
+</body>
+
+</html>

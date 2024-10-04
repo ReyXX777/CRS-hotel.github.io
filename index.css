@@ -1,0 +1,262 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdf00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #0073e6;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.room-map img {
+    max-width: 300px;
+    margin: 1rem 0;
+}
+
+.room-map button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ffdf00;
+    border: none;
+    color: #0056b3;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.room-map button:hover {
+    background-color: #e6c800;
+}
+
+#offer-result {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Features Section */
+#features {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+#features h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature {
+    width: 80%;
+    margin: 1.5rem auto;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.feature h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #0056b3;
+}
+
+.feature p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feature button {
+    padding: 0.7rem 1.5rem;
+    background-color: #0073e6;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.feature button:hover {
+    background-color: #0056b3;
+}
+
+#pricing-result {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Calendar Section */
+#calendar-placeholder {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+#calendar-placeholder ul {
+    list-style: none;
+    padding: 0;
+}
+
+#calendar-placeholder ul li {
+    padding: 0.5rem 0;
+}
+
+#calendar-placeholder ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Offers Section */
+#offers {
+    padding: 2rem 1rem;
+    background-color: white;
+}
+
+#offers h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#offers p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.offer-details {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.offer-details p {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: #ffdf00;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+.contact-info {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
